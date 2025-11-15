@@ -8,6 +8,7 @@ modules = [
   "codium",
   "direnv",
   # "faugus-launcher",
+  "flatpak",
   "gamemode",
   "gamescope",
   "git",
@@ -79,11 +80,13 @@ extraPackages = [
   "appimage-run",
   "bottles",
   "gsound", # Small library for playing system sounds (required to show file properties in Nautilus)
+  "mission-center", # CPU, Memory, Disk, Network and GPU usage monitor
   "mousai", # Song recognizer
+  "signal-desktop",
   "spotify", # Music streaming service
   "ungoogled-chromium", # Chromium with dependencies on Google web services removed
   "qbittorrent", # BitTorrent client
-  "warp",
+  "warp", # File sync
 ]
 insecurePackages = []
 
@@ -119,23 +122,23 @@ dashToPanel = true
 [icedos.desktop.gnome.users.giannis.pinnedApps.arcmenu]
 enable = true
 list = [
-  "codiumIDE.desktop",
   "org.duckstation.DuckStation.desktop",
   "PCSX2.desktop",
   "ppsspp.desktop",
   "rpcs3.desktop",
-  "smartcode-stremio.desktop",
-  "OpenRGB.desktop",
+  "com.stremio.Stremio",
   "com.usebottles.bottles.desktop",
   "io.github.lact-linux.desktop",
   "io.missioncenter.MissionCenter.desktop",
   "io.github.seadve.Mousai.desktop",
-  "onlyoffice-desktopeditors.desktop",
+  "libreoffice.desktop",
+  "io.github.kolunmi.Bazaar",
+  "codium.desktop",
 ]
 
 [icedos.desktop.gnome.users.giannis.pinnedApps.shell]
 enable = true
-list = ["steam.desktop", "signal-desktop.desktop", "librewolf.desktop"]
+list = ["steam.desktop", "signal.desktop", "io.gitlab.librewolf-community"]
 
 [icedos.desktop.gnome.clock]
 date = true
